@@ -47,7 +47,7 @@
       <node concept="3EZMnI" id="7ptjBoEXcUF" role="3EZMnx">
         <node concept="2iR$Sn" id="7ptjBoEXcUG" role="2iSdaV" />
         <node concept="3F0ifn" id="7ptjBoEXcUK" role="3EZMnx">
-          <property role="3F0ifm" value="New room" />
+          <property role="3F0ifm" value="new room" />
           <node concept="3$7fVu" id="7ptjBoEXcUL" role="3F10Kt">
             <property role="3$6WeP" value="0.5" />
           </node>
@@ -63,6 +63,9 @@
         </node>
         <node concept="3F0A7n" id="7ptjBoEXdl2" role="3EZMnx">
           <ref role="1NtTu8" to="jdo1:7ptjBoEVQFq" resolve="height" />
+        </node>
+        <node concept="3F0ifn" id="R1oOATyPRG" role="3EZMnx">
+          <property role="3F0ifm" value=" " />
         </node>
         <node concept="3F0A7n" id="7ptjBoEXdlg" role="3EZMnx">
           <ref role="1NtTu8" to="jdo1:7ptjBoEVQFs" resolve="width" />

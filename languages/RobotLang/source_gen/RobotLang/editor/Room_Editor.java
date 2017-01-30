@@ -35,11 +35,12 @@ public class Room_Editor extends DefaultNodeEditor {
     editorCell.addEditorCell(this.createProperty_8o9xns_b0a(editorContext, node));
     editorCell.addEditorCell(this.createConstant_8o9xns_c0a(editorContext, node));
     editorCell.addEditorCell(this.createProperty_8o9xns_d0a(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_8o9xns_e0a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_8o9xns_e0a(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_8o9xns_f0a(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_8o9xns_a0a(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "New room");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "new room");
     editorCell.setCellId("Constant_8o9xns_a0a");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PADDING_LEFT, 0, new Padding(0.5, Measure.SPACES));
@@ -84,7 +85,13 @@ public class Room_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createProperty_8o9xns_e0a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_8o9xns_e0a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, " ");
+    editorCell.setCellId("Constant_8o9xns_e0a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_8o9xns_f0a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("width");
     provider.setNoTargetText("<no width>");
