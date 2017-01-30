@@ -33,8 +33,9 @@ public class Room_Editor extends DefaultNodeEditor {
     editorCell.setCellId("Collection_8o9xns_a0");
     editorCell.addEditorCell(this.createConstant_8o9xns_a0a(editorContext, node));
     editorCell.addEditorCell(this.createProperty_8o9xns_b0a(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_8o9xns_c0a(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_8o9xns_c0a(editorContext, node));
     editorCell.addEditorCell(this.createProperty_8o9xns_d0a(editorContext, node));
+    editorCell.addEditorCell(this.createProperty_8o9xns_e0a(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_8o9xns_a0a(EditorContext editorContext, SNode node) {
@@ -62,7 +63,13 @@ public class Room_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createProperty_8o9xns_c0a(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_8o9xns_c0a(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, " ");
+    editorCell.setCellId("Constant_8o9xns_c0a");
+    editorCell.setDefaultText("");
+    return editorCell;
+  }
+  private EditorCell createProperty_8o9xns_d0a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("height");
     provider.setNoTargetText("<no height>");
@@ -77,7 +84,7 @@ public class Room_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createProperty_8o9xns_d0a(EditorContext editorContext, SNode node) {
+  private EditorCell createProperty_8o9xns_e0a(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
     provider.setRole("width");
     provider.setNoTargetText("<no width>");
