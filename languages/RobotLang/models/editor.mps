@@ -12,11 +12,18 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1106270637846" name="jetbrains.mps.lang.editor.structure.CellLayout_Flow" flags="nn" index="2iR$Sn" />
+      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
+      <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
+        <property id="1186414551515" name="flag" index="VOm3f" />
+      </concept>
+      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1215007762405" name="jetbrains.mps.lang.editor.structure.FloatStyleClassItem" flags="ln" index="3$6MrZ">
         <property id="1215007802031" name="value" index="3$6WeP" />
       </concept>
@@ -36,6 +43,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ng" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -71,7 +79,43 @@
           <ref role="1NtTu8" to="jdo1:7ptjBoEVQFs" resolve="width" />
         </node>
       </node>
+      <node concept="3EZMnI" id="Yooli_GFCE" role="3EZMnx">
+        <node concept="VPM3Z" id="Yooli_GFCG" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="l2Vlx" id="Yooli_GFCJ" role="2iSdaV" />
+        <node concept="3F1sOY" id="Yooli_GWq3" role="3EZMnx">
+          <ref role="1NtTu8" to="jdo1:Yooli_Gfn$" resolve="robot" />
+        </node>
+      </node>
       <node concept="2iRkQZ" id="7ptjBoEVQF$" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7qWn2hbsZlf">
+    <ref role="1XX52x" to="jdo1:7qWn2hbsZjn" resolve="Robot" />
+    <node concept="3EZMnI" id="7qWn2hbsZzd" role="2wV5jI">
+      <node concept="3F0ifn" id="7qWn2hbsZ_k" role="3EZMnx">
+        <property role="3F0ifm" value="robot:" />
+      </node>
+      <node concept="2iRfu4" id="7qWn2hbsZzg" role="2iSdaV" />
+      <node concept="3F0A7n" id="7qWn2hbsZA3" role="3EZMnx">
+        <ref role="1NtTu8" to="jdo1:7qWn2hbsZke" resolve="x" />
+        <node concept="ljvvj" id="7qWn2hbsZA4" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="7qWn2hbsZAl" role="3EZMnx">
+        <ref role="1NtTu8" to="jdo1:7qWn2hbsZk_" resolve="y" />
+        <node concept="ljvvj" id="7qWn2hbsZAm" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="7qWn2hbsZAJ" role="3EZMnx">
+        <ref role="1NtTu8" to="jdo1:7qWn2hbsZkL" resolve="direction" />
+        <node concept="ljvvj" id="7qWn2hbsZAK" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

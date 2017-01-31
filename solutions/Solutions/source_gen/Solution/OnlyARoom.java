@@ -4,12 +4,20 @@ package Solution;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import java.awt.Graphics;
 import javax.swing.WindowConstants;
 import java.awt.Dimension;
 
 public class OnlyARoom extends JFrame {
 
-  private JPanel panel = new JPanel() {};
+  private JPanel panel = new JPanel() {
+    @Override
+    protected void paintComponent(Graphics graphics) {
+      super.paintComponent(graphics);
+      graphics.drawOval(250, 250, 10, 10);
+    }
+
+  };
 
   private void initialize() {
     this.setTitle("OnlyARoom");

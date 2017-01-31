@@ -18,20 +18,22 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(3);
+  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(4);
   /*package*/ final ConceptDescriptor myConceptDirection = createDescriptorForDirection();
   /*package*/ final ConceptDescriptor myConceptMove = createDescriptorForMove();
+  /*package*/ final ConceptDescriptor myConceptRobot = createDescriptorForRobot();
   /*package*/ final ConceptDescriptor myConceptRoom = createDescriptorForRoom();
 
   public StructureAspectDescriptor() {
     myIndexMap.put(myConceptDirection.getId(), 0);
     myIndexMap.put(myConceptMove.getId(), 1);
-    myIndexMap.put(myConceptRoom.getId(), 2);
+    myIndexMap.put(myConceptRobot.getId(), 2);
+    myIndexMap.put(myConceptRoom.getId(), 3);
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptDirection, myConceptMove, myConceptRoom);
+    return Arrays.asList(myConceptDirection, myConceptMove, myConceptRobot, myConceptRoom);
   }
 
   @Override
@@ -47,6 +49,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 1:
         return myConceptMove;
       case 2:
+        return myConceptRobot;
+      case 3:
         return myConceptRoom;
       default:
         throw new IllegalStateException();
@@ -69,7 +73,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   private static ConceptDescriptor createDescriptorForMove() {
     return new ConceptDescriptorBuilder("RobotLang.structure.Move", MetaIdFactory.conceptId(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80148L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x765d4e762af8017fL, "distance", new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "8529059538743591295"))).properties("distance").alias("move", "").sourceNode(new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "8529059538743591240")).create();
   }
+  private static ConceptDescriptor createDescriptorForRobot() {
+    return new ConceptDescriptorBuilder("RobotLang.structure.Robot", MetaIdFactory.conceptId(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x76bc5c244b73f4d7L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x76bc5c244b73f50eL, "x", new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "8555814703051568398")), new ConceptDescriptorBuilder.Prop(0x76bc5c244b73f525L, "y", new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "8555814703051568421")), new ConceptDescriptorBuilder.Prop(0x76bc5c244b73f531L, "direction", new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "8555814703051568433"))).properties("x", "y", "direction").alias("robot", "").sourceNode(new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "8555814703051568343")).create();
+  }
   private static ConceptDescriptor createDescriptorForRoom() {
-    return new ConceptDescriptorBuilder("RobotLang.structure.Room", MetaIdFactory.conceptId(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762aef6ac7L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.execution.util.structure.IMainClass").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L), MetaIdFactory.conceptId(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x765d4e762aef6adaL, "height", new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "8529059538743028442")), new ConceptDescriptorBuilder.Prop(0x765d4e762aef6adcL, "width", new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "8529059538743028444"))).properties("height", "width").rootable().alias("room", "").sourceNode(new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "8529059538743028423")).create();
+    return new ConceptDescriptorBuilder("RobotLang.structure.Room", MetaIdFactory.conceptId(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762aef6ac7L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept", "jetbrains.mps.lang.core.structure.INamedConcept", "jetbrains.mps.execution.util.structure.IMainClass").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L), MetaIdFactory.conceptId(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x765d4e762aef6adaL, "height", new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "8529059538743028442")), new ConceptDescriptorBuilder.Prop(0x765d4e762aef6adcL, "width", new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "8529059538743028444"))).properties("height", "width").childDescriptors(new ConceptDescriptorBuilder.Link(0xf986154a5b0f5e4L, "robot", MetaIdFactory.conceptId(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x76bc5c244b73f4d7L), false, false, false, new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "1123755123213923812"))).children(new String[]{"robot"}, new boolean[]{false}).rootable().alias("room", "").sourceNode(new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "8529059538743028423")).create();
   }
 }
