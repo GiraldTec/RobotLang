@@ -7,8 +7,8 @@
   </languages>
   <imports>
     <import index="cewu" ref="r:df8f0523-9c15-4816-a9e1-e8a22c50f1e9(ExtendedRobot.structure)" implicit="true" />
-    <import index="jdo1" ref="r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="jdo1" ref="r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -18,6 +18,7 @@
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
+      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -26,7 +27,12 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -67,8 +73,32 @@
           <property role="VOm3f" value="false" />
         </node>
       </node>
-      <node concept="3F1sOY" id="4YpOxlRlkgn" role="3EZMnx">
-        <ref role="1NtTu8" to="jdo1:Yooli_Gfn$" resolve="robot" />
+      <node concept="3EZMnI" id="v1xVt2GIVD" role="3EZMnx">
+        <node concept="VPM3Z" id="v1xVt2GIVF" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="v1xVt2GIW6" role="3EZMnx">
+          <property role="3F0ifm" value="extended room" />
+        </node>
+        <node concept="3F0A7n" id="v1xVt2GIW$" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0A7n" id="v1xVt2GIYG" role="3EZMnx">
+          <ref role="1NtTu8" to="jdo1:7ptjBoEVQFq" resolve="height" />
+        </node>
+        <node concept="3F0A7n" id="v1xVt2GIZ_" role="3EZMnx">
+          <ref role="1NtTu8" to="jdo1:7ptjBoEVQFs" resolve="width" />
+        </node>
+        <node concept="2iRfu4" id="v1xVt2GIVI" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="v1xVt2GJ0y" role="3EZMnx">
+        <node concept="VPM3Z" id="v1xVt2GJ0$" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F1sOY" id="v1xVt2GJ1e" role="3EZMnx">
+          <ref role="1NtTu8" to="jdo1:Yooli_Gfn$" resolve="robot" />
+        </node>
+        <node concept="l2Vlx" id="v1xVt2GJ0B" role="2iSdaV" />
       </node>
     </node>
   </node>
@@ -76,7 +106,7 @@
     <ref role="1XX52x" to="cewu:4YpOxlRkfnT" resolve="Constant" />
     <node concept="3EZMnI" id="4YpOxlRkf$2" role="2wV5jI">
       <node concept="3F0ifn" id="4YpOxlRkf$q" role="3EZMnx">
-        <property role="3F0ifm" value="const" />
+        <property role="3F0ifm" value="myconstant" />
       </node>
       <node concept="3F0A7n" id="4YpOxlRkf$z" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -91,6 +121,24 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="v1xVt2Hx8P">
+    <ref role="1XX52x" to="cewu:v1xVt2Hx7w" resolve="ExtendedMove" />
+    <node concept="3EZMnI" id="v1xVt2Hx9H" role="2wV5jI">
+      <node concept="3F0ifn" id="v1xVt2Hx9R" role="3EZMnx">
+        <property role="3F0ifm" value="xMove" />
+      </node>
+      <node concept="1iCGBv" id="v1xVt2Hxb_" role="3EZMnx">
+        <ref role="1NtTu8" to="cewu:v1xVt2Hxbr" resolve="distance" />
+        <node concept="1sVBvm" id="v1xVt2HxbB" role="1sWHZn">
+          <node concept="3F0A7n" id="v1xVt2HxbN" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="v1xVt2Hx9K" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -205,11 +205,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
-        <reference id="6733348108486823428" name="concept" index="1m5ApE" />
-        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
-      </concept>
-      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -1014,8 +1009,8 @@
                                 <node concept="3clFbF" id="4YpOxlRkiWQ" role="3cqZAp">
                                   <node concept="2OqwBi" id="4YpOxlRkttZ" role="3clFbG">
                                     <node concept="30H73N" id="4YpOxlRktc5" role="2Oq$k0" />
-                                    <node concept="3TrcHB" id="4YpOxlRktXo" role="2OqNvi">
-                                      <ref role="3TsBF5" to="jdo1:7ptjBoEY05Z" resolve="distance" />
+                                    <node concept="3TrcHB" id="v1xVt2Ho_S" role="2OqNvi">
+                                      <ref role="3TsBF5" to="jdo1:v1xVt2Ho7S" resolve="distance" />
                                     </node>
                                   </node>
                                 </node>
@@ -1047,13 +1042,10 @@
                             <node concept="3zFVjK" id="4YpOxlRkiX3" role="3zH0cK">
                               <node concept="3clFbS" id="4YpOxlRkiX4" role="2VODD2">
                                 <node concept="3clFbF" id="4YpOxlRkiX5" role="3cqZAp">
-                                  <node concept="2OqwBi" id="4YpOxlRkiX6" role="3clFbG">
-                                    <node concept="1PxgMI" id="4YpOxlRkiX7" role="2Oq$k0">
-                                      <ref role="1m5ApE" to="jdo1:7ptjBoEY058" resolve="Move" />
-                                      <node concept="30H73N" id="4YpOxlRkiX8" role="1m5AlR" />
-                                    </node>
-                                    <node concept="3TrcHB" id="4YpOxlRkiX9" role="2OqNvi">
-                                      <ref role="3TsBF5" to="jdo1:7ptjBoEY05Z" resolve="distance" />
+                                  <node concept="2OqwBi" id="v1xVt2HqLO" role="3clFbG">
+                                    <node concept="30H73N" id="v1xVt2Hqv8" role="2Oq$k0" />
+                                    <node concept="3TrcHB" id="v1xVt2HrjJ" role="2OqNvi">
+                                      <ref role="3TsBF5" to="jdo1:v1xVt2Ho7S" resolve="distance" />
                                     </node>
                                   </node>
                                 </node>

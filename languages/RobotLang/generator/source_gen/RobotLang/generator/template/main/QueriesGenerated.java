@@ -6,7 +6,6 @@ import jetbrains.mps.generator.runtime.Generated;
 import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
@@ -36,10 +35,10 @@ public class QueriesGenerated {
     return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x76bc5c244b73f4d7L, 0x76bc5c244b73f531L, "direction"));
   }
   public static Object propertyMacro_GetPropertyValue_5735846590070992692(final PropertyMacroContext _context) {
-    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80148L, 0x765d4e762af8017fL, "distance"));
+    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80148L, 0x7c187b742b581f8L, "distance"));
   }
   public static Object propertyMacro_GetPropertyValue_5735846590070992707(final PropertyMacroContext _context) {
-    return SPropertyOperations.getInteger(SNodeOperations.cast(_context.getNode(), MetaAdapterFactory.getConcept(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80148L, "RobotLang.structure.Move")), MetaAdapterFactory.getProperty(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80148L, 0x765d4e762af8017fL, "distance"));
+    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80148L, 0x7c187b742b581f8L, "distance"));
   }
   public static Object propertyMacro_GetPropertyValue_5735846590071125998(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x21602a7b08fc9151L, 0x21602a7b08fc916dL, "angle"));

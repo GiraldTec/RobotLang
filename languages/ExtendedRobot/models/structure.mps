@@ -71,5 +71,17 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="v1xVt2Hx7w">
+    <property role="EcuMT" value="558877049938645472" />
+    <property role="TrG5h" value="ExtendedMove" />
+    <ref role="1TJDcQ" to="jdo1:7ptjBoEY061" resolve="Action" />
+    <node concept="1TJgyj" id="v1xVt2Hxbr" role="1TKVEi">
+      <property role="IQ2ns" value="558877049938645723" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="distance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4YpOxlRkfnT" resolve="Constant" />
+    </node>
+  </node>
 </model>
 
