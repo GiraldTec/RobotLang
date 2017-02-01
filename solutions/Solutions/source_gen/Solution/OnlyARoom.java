@@ -20,14 +20,16 @@ public class OnlyARoom extends JFrame {
         int oldx = 250;
         int oldy = 250;
         int dir = 1;
-        graphics.drawOval(oldx, oldy, 10, 10);
-
+        graphics.drawOval(oldx - 5, oldy - 5, 10, 10);
         newy = moveForwardY(oldy, dir, 10);
         newx = moveForwardX(oldx, dir, 10);
         graphics.drawLine(oldx, oldy, newx, newy);
         oldx = newx;
         oldy = newy;
-        graphics.drawOval(oldx, oldy, 10, 10);
+        System.out.println("we move from:");
+        System.out.println(oldx);
+        System.out.println(oldy);
+        graphics.drawOval(oldx - 5, oldy - 5, 10, 10);
       }
     }
 
@@ -45,9 +47,9 @@ public class OnlyARoom extends JFrame {
 
   public int moveForwardX(int x, int dir, int dist) {
     switch (dir) {
-      case 1:
-        return x - dist;
       case 3:
+        return x - dist;
+      case 1:
         return x + dist;
       default:
         return x;

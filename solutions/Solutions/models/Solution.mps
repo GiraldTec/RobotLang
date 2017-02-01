@@ -52,14 +52,35 @@
       <property role="XNU$E" value="100" />
       <property role="XNU$1" value="100" />
       <property role="XNU$l" value="0" />
-      <node concept="1sDkWY" id="25waBG93_8f" role="2ypZiR">
-        <property role="1sDkW9" value="50" />
-      </node>
       <node concept="DBbGE" id="25waBG93_8k" role="2ypZiR">
         <property role="DBbGm" value="1" />
       </node>
       <node concept="1sDkWY" id="25waBG93_8s" role="2ypZiR">
-        <property role="1sDkW9" value="100" />
+        <property role="1sDkW9" value="200" />
+      </node>
+      <node concept="DBbGE" id="25waBG948QN" role="2ypZiR">
+        <property role="DBbGm" value="3" />
+      </node>
+      <node concept="1sDkWY" id="25waBG948QX" role="2ypZiR">
+        <property role="1sDkW9" value="50" />
+      </node>
+      <node concept="DBbGE" id="4YpOxlRk4AK" role="2ypZiR">
+        <property role="DBbGm" value="3" />
+      </node>
+      <node concept="1sDkWY" id="4YpOxlRk4B9" role="2ypZiR">
+        <property role="1sDkW9" value="150" />
+      </node>
+      <node concept="DBbGE" id="4YpOxlRk4BA" role="2ypZiR">
+        <property role="DBbGm" value="3" />
+      </node>
+      <node concept="1sDkWY" id="4YpOxlRk4C7" role="2ypZiR">
+        <property role="1sDkW9" value="300" />
+      </node>
+      <node concept="DBbGE" id="4YpOxlRkXIY" role="2ypZiR">
+        <property role="DBbGm" value="1" />
+      </node>
+      <node concept="1sDkWY" id="4YpOxlRkXJB" role="2ypZiR">
+        <property role="1sDkW9" value="80" />
       </node>
     </node>
   </node>

@@ -7,7 +7,6 @@ import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import jetbrains.mps.generator.template.IfMacroContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodeContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
@@ -36,25 +35,19 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_2404968908936022438(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x76bc5c244b73f4d7L, 0x76bc5c244b73f531L, "direction"));
   }
-  public static Object propertyMacro_GetPropertyValue_2404968908936690146(final PropertyMacroContext _context) {
+  public static Object propertyMacro_GetPropertyValue_5735846590070992692(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80148L, 0x765d4e762af8017fL, "distance"));
+  }
+  public static Object propertyMacro_GetPropertyValue_5735846590070992707(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(SNodeOperations.cast(_context.getNode(), MetaAdapterFactory.getConcept(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80148L, "RobotLang.structure.Move")), MetaAdapterFactory.getProperty(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80148L, 0x765d4e762af8017fL, "distance"));
   }
-  public static Object propertyMacro_GetPropertyValue_2404968908936713511(final PropertyMacroContext _context) {
-    return SPropertyOperations.getInteger(SNodeOperations.cast(_context.getNode(), MetaAdapterFactory.getConcept(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80148L, "RobotLang.structure.Move")), MetaAdapterFactory.getProperty(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80148L, 0x765d4e762af8017fL, "distance"));
-  }
-  public static Object propertyMacro_GetPropertyValue_2404968908936883295(final PropertyMacroContext _context) {
-    return SPropertyOperations.getInteger(SNodeOperations.cast(_context.getNode(), MetaAdapterFactory.getConcept(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x21602a7b08fc9151L, "RobotLang.structure.Turn")), MetaAdapterFactory.getProperty(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x21602a7b08fc9151L, 0x21602a7b08fc916dL, "angle"));
-  }
-  public static boolean ifMacro_Condition_2404968908936096802(final IfMacroContext _context) {
-    return SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80148L, "RobotLang.structure.Move"));
-  }
-  public static boolean ifMacro_Condition_2404968908936832018(final IfMacroContext _context) {
-    return SNodeOperations.isInstanceOf(_context.getNode(), MetaAdapterFactory.getConcept(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x21602a7b08fc9151L, "RobotLang.structure.Turn"));
+  public static Object propertyMacro_GetPropertyValue_5735846590071125998(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x21602a7b08fc9151L, 0x21602a7b08fc916dL, "angle"));
   }
   public static SNode sourceNodeQuery_1123755123214027522(final SourceSubstituteMacroNodeContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762aef6ac7L, 0xf986154a5b0f5e4L, "robot"));
   }
-  public static Iterable<SNode> sourceNodesQuery_2404968908936023691(final SourceSubstituteMacroNodesContext _context) {
+  public static Iterable<SNode> sourceNodesQuery_5735846590071344296(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x76bc5c244b73f4d7L, 0x9833b2fabe4cf98L, "actions"));
   }
 }
