@@ -9,10 +9,11 @@ import org.jetbrains.annotations.Nullable;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
-  private final ConceptPresentation props_Direction = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Action = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Move = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Robot = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Room = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Turn = new ConceptPresentationBuilder().create();
 
   @Override
   @Nullable
@@ -20,13 +21,15 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
     StructureAspectDescriptor structureDescriptor = (StructureAspectDescriptor) myLanguageRuntime.getAspect(jetbrains.mps.smodel.runtime.StructureAspectDescriptor.class);
     switch (structureDescriptor.internalIndex(c)) {
       case 0:
-        return props_Direction;
+        return props_Action;
       case 1:
         return props_Move;
       case 2:
         return props_Robot;
       case 3:
         return props_Room;
+      case 4:
+        return props_Turn;
     }
     throw new IllegalStateException("Unknown concept " + c);
   }

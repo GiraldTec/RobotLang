@@ -22,12 +22,22 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       switch (switchIndex) {
         case 0:
           if (true) {
-            return Collections.<ConceptEditor>singletonList(new Robot_Editor());
+            return Collections.<ConceptEditor>singletonList(new Move_Editor());
           }
           break;
         case 1:
           if (true) {
+            return Collections.<ConceptEditor>singletonList(new Robot_Editor());
+          }
+          break;
+        case 2:
+          if (true) {
             return Collections.<ConceptEditor>singletonList(new Room_Editor());
+          }
+          break;
+        case 3:
+          if (true) {
+            return Collections.<ConceptEditor>singletonList(new Turn_Editor());
           }
           break;
         default:
@@ -46,5 +56,5 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
     }
     return res;
   }
-  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0a = buildConceptIndices(MetaAdapterFactory.getConcept(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x76bc5c244b73f4d7L, "RobotLang.structure.Robot"), MetaAdapterFactory.getConcept(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762aef6ac7L, "RobotLang.structure.Room"));
+  private static final Map<SAbstractConcept, Integer> indices_xbvbvu_a0a = buildConceptIndices(MetaAdapterFactory.getConcept(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80148L, "RobotLang.structure.Move"), MetaAdapterFactory.getConcept(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x76bc5c244b73f4d7L, "RobotLang.structure.Robot"), MetaAdapterFactory.getConcept(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762aef6ac7L, "RobotLang.structure.Room"), MetaAdapterFactory.getConcept(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x21602a7b08fc9151L, "RobotLang.structure.Turn"));
 }

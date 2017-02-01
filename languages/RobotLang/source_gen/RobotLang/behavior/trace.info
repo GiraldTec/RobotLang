@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <debug-info version="2">
   <root>
+    <file name="Action_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="RobotLang.behavior.Action_BehaviorDescriptor" />
+    </file>
     <file name="BehaviorAspectDescriptor.java">
       <unit at="13,0,41,0" name="RobotLang.behavior.BehaviorAspectDescriptor" />
-    </file>
-    <file name="Direction_BehaviorDescriptor.java">
-      <unit at="11,0,17,0" name="RobotLang.behavior.Direction_BehaviorDescriptor" />
     </file>
     <file name="Move_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="RobotLang.behavior.Move_BehaviorDescriptor" />
     </file>
+    <file name="Robot_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="RobotLang.behavior.Robot_BehaviorDescriptor" />
+    </file>
     <file name="Room_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="RobotLang.behavior.Room_BehaviorDescriptor" />
+    </file>
+    <file name="Turn_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="RobotLang.behavior.Turn_BehaviorDescriptor" />
     </file>
   </root>
 </debug-info>

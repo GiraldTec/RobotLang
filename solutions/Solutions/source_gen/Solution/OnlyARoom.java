@@ -14,8 +14,23 @@ public class OnlyARoom extends JFrame {
     @Override
     protected void paintComponent(Graphics graphics) {
       super.paintComponent(graphics);
-      graphics.drawOval(250, 250, 10, 10);
+      {
+        int newx = 0;
+        int newy = 0;
+        int oldx = 250;
+        int oldy = 250;
+        int dir = 1;
+        graphics.drawOval(oldx, oldy, 10, 10);
+
+        newy = moveForwardY(oldy, dir, 10);
+        newx = moveForwardX(oldx, dir, 10);
+        graphics.drawLine(oldx, oldy, newx, newy);
+        oldx = newx;
+        oldy = newy;
+        graphics.drawOval(oldx, oldy, 10, 10);
+      }
     }
+
 
   };
 
@@ -27,9 +42,33 @@ public class OnlyARoom extends JFrame {
     this.pack();
     this.setVisible(true);
   }
+
+  public int moveForwardX(int x, int dir, int dist) {
+    switch (dir) {
+      case 1:
+        return x - dist;
+      case 3:
+        return x + dist;
+      default:
+        return x;
+    }
+  }
+  public int moveForwardY(int x, int dir, int dist) {
+    switch (dir) {
+      case 0:
+        return x - dist;
+      case 2:
+        return x + dist;
+      default:
+        return x;
+    }
+  }
+
+
   public static void main(String[] args) {
     OnlyARoom room = new OnlyARoom();
     room.initialize();
   }
+
 
 }

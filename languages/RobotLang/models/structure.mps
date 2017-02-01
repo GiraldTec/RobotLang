@@ -8,12 +8,12 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -78,7 +78,7 @@
     <property role="EcuMT" value="8529059538743591240" />
     <property role="TrG5h" value="Move" />
     <property role="34LRSv" value="move" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="7ptjBoEY061" resolve="Action" />
     <node concept="1TJgyi" id="7ptjBoEY05Z" role="1TKVEl">
       <property role="IQ2nx" value="8529059538743591295" />
       <property role="TrG5h" value="distance" />
@@ -87,8 +87,9 @@
   </node>
   <node concept="1TIwiD" id="7ptjBoEY061">
     <property role="EcuMT" value="8529059538743591297" />
-    <property role="TrG5h" value="Direction" />
-    <property role="34LRSv" value="direction" />
+    <property role="TrG5h" value="Action" />
+    <property role="34LRSv" value="action" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="7qWn2hbsZjn">
@@ -109,7 +110,25 @@
     <node concept="1TJgyi" id="7qWn2hbsZkL" role="1TKVEl">
       <property role="IQ2nx" value="8555814703051568433" />
       <property role="TrG5h" value="direction" />
-      <ref role="AX2Wp" to="tpee:4_5hYVHKxAU" resolve="_FloatNumberValue" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="A3eMYFTcYo" role="1TKVEi">
+      <property role="IQ2ns" value="685456644223848344" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actions" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="7ptjBoEY061" resolve="Action" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="25waBG8Z95h">
+    <property role="EcuMT" value="2404968908935958865" />
+    <property role="TrG5h" value="Turn" />
+    <property role="34LRSv" value="turn" />
+    <ref role="1TJDcQ" node="7ptjBoEY061" resolve="Action" />
+    <node concept="1TJgyi" id="25waBG8Z95H" role="1TKVEl">
+      <property role="IQ2nx" value="2404968908935958893" />
+      <property role="TrG5h" value="angle" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>
