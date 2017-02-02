@@ -144,6 +144,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -198,8 +199,12 @@
         <reference id="1167514355421" name="template" index="3lhOvi" />
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
+      <concept id="1167945743726" name="jetbrains.mps.lang.generator.structure.IfMacro_Condition" flags="in" index="3IZrLx" />
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
       <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
+      <concept id="1118773211870" name="jetbrains.mps.lang.generator.structure.IfMacro" flags="ln" index="1W57fq">
+        <child id="1167945861827" name="conditionFunction" index="3IZSJc" />
+      </concept>
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
       </concept>
@@ -295,6 +300,23 @@
                   </node>
                 </node>
                 <node concept="3clFbH" id="Yooli_GCFd" role="3cqZAp">
+                  <node concept="1W57fq" id="5W1nrxW3pqM" role="lGtFl">
+                    <node concept="3IZrLx" id="5W1nrxW3pqO" role="3IZSJc">
+                      <node concept="3clFbS" id="5W1nrxW3pqQ" role="2VODD2">
+                        <node concept="3clFbF" id="5W1nrxW3qZC" role="3cqZAp">
+                          <node concept="3y3z36" id="5W1nrxW3t0s" role="3clFbG">
+                            <node concept="10Nm6u" id="5W1nrxW3ub$" role="3uHU7w" />
+                            <node concept="2OqwBi" id="5W1nrxW3rdn" role="3uHU7B">
+                              <node concept="30H73N" id="5W1nrxW3qZB" role="2Oq$k0" />
+                              <node concept="3TrEf2" id="5W1nrxW3r_w" role="2OqNvi">
+                                <ref role="3Tt5mk" to="jdo1:Yooli_Gfn$" resolve="robot" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                   <node concept="29HgVG" id="Yooli_GCG1" role="lGtFl">
                     <node concept="3NFfHV" id="Yooli_GCG2" role="3NFExx">
                       <node concept="3clFbS" id="Yooli_GCG3" role="2VODD2">

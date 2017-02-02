@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="Solution.OnlyARoom" file="OnlyARoom.java">
+  <dependency className="Solution.MovingRobot" file="MovingRobot.java">
     <classNode dependClassName="java.awt.Dimension" />
     <classNode dependClassName="java.awt.Graphics" />
     <classNode dependClassName="java.lang.Override" />
@@ -10,12 +10,20 @@
     <classNode dependClassName="javax.swing.WindowConstants" />
     <classNode extendsClassName="javax.swing.JFrame" />
   </dependency>
-  <dependency className="Solution.OnlyOneRobot" file="OnlyOneRobot.java">
+  <dependency className="Solution.OnlyARobot" file="OnlyARobot.java">
     <classNode dependClassName="java.awt.Dimension" />
     <classNode dependClassName="java.awt.Graphics" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.lang.System" />
+    <classNode dependClassName="javax.swing.JPanel" />
+    <classNode dependClassName="javax.swing.WindowConstants" />
+    <classNode extendsClassName="javax.swing.JFrame" />
+  </dependency>
+  <dependency className="Solution.OnlyARoom" file="OnlyARoom.java">
+    <classNode dependClassName="java.awt.Dimension" />
+    <classNode dependClassName="java.awt.Graphics" />
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="javax.swing.JPanel" />
     <classNode dependClassName="javax.swing.WindowConstants" />
     <classNode extendsClassName="javax.swing.JFrame" />

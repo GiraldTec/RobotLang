@@ -8,7 +8,6 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -71,7 +70,7 @@
       <property role="IQ2ns" value="1123755123213923812" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="robot" />
-      <property role="20lbJX" value="1" />
+      <property role="20lbJX" value="0..1" />
       <ref role="20lvS9" node="7qWn2hbsZjn" resolve="Robot" />
     </node>
   </node>
@@ -80,9 +79,6 @@
     <property role="TrG5h" value="Move" />
     <property role="34LRSv" value="move" />
     <ref role="1TJDcQ" node="7ptjBoEY061" resolve="Action" />
-    <node concept="PrWs8" id="v1xVt2Hf1o" role="PzmwI">
-      <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
-    </node>
     <node concept="1TJgyi" id="v1xVt2Ho7S" role="1TKVEl">
       <property role="IQ2nx" value="558877049938608632" />
       <property role="TrG5h" value="distance" />

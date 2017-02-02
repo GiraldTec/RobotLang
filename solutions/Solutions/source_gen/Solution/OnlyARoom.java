@@ -14,23 +14,6 @@ public class OnlyARoom extends JFrame {
     @Override
     protected void paintComponent(Graphics graphics) {
       super.paintComponent(graphics);
-      {
-        int newx = 0;
-        int newy = 0;
-        int oldx = 250;
-        int oldy = 250;
-        int dir = 1;
-        graphics.drawOval(oldx - 5, oldy - 5, 10, 10);
-        newy = moveForwardY(oldy, dir, 10);
-        newx = moveForwardX(oldx, dir, 10);
-        graphics.drawLine(oldx, oldy, newx, newy);
-        oldx = newx;
-        oldy = newy;
-        System.out.println("we move from:");
-        System.out.println(oldx);
-        System.out.println(oldy);
-        graphics.drawOval(oldx - 5, oldy - 5, 10, 10);
-      }
     }
 
 

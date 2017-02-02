@@ -17,7 +17,7 @@
         <child id="685456644223848344" name="actions" index="2ypZiR" />
       </concept>
       <concept id="8529059538743591240" name="RobotLang.structure.Move" flags="ng" index="1sDkWY">
-        <property id="8529059538743591295" name="distance" index="1sDkW9" />
+        <property id="558877049938608632" name="distance" index="15t0pf" />
       </concept>
       <concept id="8529059538743028423" name="RobotLang.structure.Room" flags="ng" index="1sGyiL">
         <property id="8529059538743028444" name="width" index="1sGyiE" />
@@ -35,17 +35,9 @@
     <property role="TrG5h" value="OnlyARoom" />
     <property role="1sGyiG" value="500" />
     <property role="1sGyiE" value="500" />
-    <node concept="XNUzN" id="Yooli_GWpj" role="2Ea9iK">
-      <property role="XNU$E" value="250" />
-      <property role="XNU$1" value="250" />
-      <property role="XNU$l" value="1" />
-      <node concept="1sDkWY" id="25waBG93_9M" role="2ypZiR">
-        <property role="1sDkW9" value="10" />
-      </node>
-    </node>
   </node>
   <node concept="1sGyiL" id="Yooli_GFxv">
-    <property role="TrG5h" value="OnlyOneRobot" />
+    <property role="TrG5h" value="MovingRobot" />
     <property role="1sGyiG" value="500" />
     <property role="1sGyiE" value="500" />
     <node concept="XNUzN" id="Yooli_GWq7" role="2Ea9iK">
@@ -55,33 +47,43 @@
       <node concept="DBbGE" id="25waBG93_8k" role="2ypZiR">
         <property role="DBbGm" value="1" />
       </node>
-      <node concept="1sDkWY" id="25waBG93_8s" role="2ypZiR">
-        <property role="1sDkW9" value="200" />
+      <node concept="1sDkWY" id="5W1nrxW3jWn" role="2ypZiR">
+        <property role="15t0pf" value="100" />
       </node>
       <node concept="DBbGE" id="25waBG948QN" role="2ypZiR">
         <property role="DBbGm" value="3" />
       </node>
-      <node concept="1sDkWY" id="25waBG948QX" role="2ypZiR">
-        <property role="1sDkW9" value="50" />
+      <node concept="1sDkWY" id="5W1nrxW3jYh" role="2ypZiR">
+        <property role="15t0pf" value="150" />
       </node>
       <node concept="DBbGE" id="4YpOxlRk4AK" role="2ypZiR">
         <property role="DBbGm" value="3" />
       </node>
-      <node concept="1sDkWY" id="4YpOxlRk4B9" role="2ypZiR">
-        <property role="1sDkW9" value="150" />
+      <node concept="1sDkWY" id="5W1nrxW3jXk" role="2ypZiR">
+        <property role="15t0pf" value="50" />
       </node>
       <node concept="DBbGE" id="4YpOxlRk4BA" role="2ypZiR">
-        <property role="DBbGm" value="3" />
+        <property role="DBbGm" value="-1" />
       </node>
-      <node concept="1sDkWY" id="4YpOxlRk4C7" role="2ypZiR">
-        <property role="1sDkW9" value="300" />
+      <node concept="1sDkWY" id="5W1nrxW3jZe" role="2ypZiR">
+        <property role="15t0pf" value="200" />
       </node>
       <node concept="DBbGE" id="4YpOxlRkXIY" role="2ypZiR">
         <property role="DBbGm" value="1" />
       </node>
-      <node concept="1sDkWY" id="4YpOxlRkXJB" role="2ypZiR">
-        <property role="1sDkW9" value="80" />
+      <node concept="1sDkWY" id="5W1nrxW3k0b" role="2ypZiR">
+        <property role="15t0pf" value="300" />
       </node>
+    </node>
+  </node>
+  <node concept="1sGyiL" id="5W1nrxW3zQT">
+    <property role="TrG5h" value="OnlyARobot" />
+    <property role="1sGyiG" value="500" />
+    <property role="1sGyiE" value="500" />
+    <node concept="XNUzN" id="5W1nrxW3zRK" role="2Ea9iK">
+      <property role="XNU$E" value="100" />
+      <property role="XNU$1" value="100" />
+      <property role="XNU$l" value="0" />
     </node>
   </node>
 </model>
