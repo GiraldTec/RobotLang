@@ -19,34 +19,74 @@ public class OnlyARoom extends JFrame {
 
   };
 
+  private int width;
+  private int height;
   private void initialize() {
     this.setTitle("OnlyARoom");
     this.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
     this.add(panel);
-    panel.setPreferredSize(new Dimension(500, 500));
+    width = 500;
+    height = 500;
+    panel.setPreferredSize(new Dimension(width, height));
     this.pack();
     this.setVisible(true);
   }
 
   public int moveForwardX(int x, int dir, int dist) {
+    int r = x;
+    System.out.println("moveX");
+    System.out.println(dir);
+
     switch (dir) {
       case 3:
-        return x - dist;
+        System.out.println("case 3");
+        r = x - dist;
+        break;
       case 1:
-        return x + dist;
+        System.out.println("case 1");
+
+        r = x + dist;
+        break;
       default:
-        return x;
+        System.out.println("case 0 or 2");
+
     }
+    if (r > width) {
+      r = width - 5;
+    }
+    if (r <= 0) {
+      r = 5;
+    }
+
+    return r;
   }
-  public int moveForwardY(int x, int dir, int dist) {
+  public int moveForwardY(int y, int dir, int dist) {
+    int r = y;
+    System.out.println("moveY");
+    System.out.println(dir);
+
     switch (dir) {
       case 0:
-        return x - dist;
+        System.out.println("case 0");
+
+        r = y - dist;
+        break;
       case 2:
-        return x + dist;
+        System.out.println("case 2");
+
+        r = y + dist;
+        break;
       default:
-        return x;
+        System.out.println("case 1 or 3");
+
     }
+    if (r > height) {
+      r = height - 5;
+    }
+    if (r <= 0) {
+      r = 5;
+    }
+    return r;
   }
 
 

@@ -17,10 +17,10 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_8529059538743235535(final PropertyMacroContext _context) {
     return SPropertyOperations.getString(_context.getNode(), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name"));
   }
-  public static Object propertyMacro_GetPropertyValue_8529059538743505454(final PropertyMacroContext _context) {
+  public static Object propertyMacro_GetPropertyValue_6845855955517040628(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762aef6ac7L, 0x765d4e762aef6adcL, "width"));
   }
-  public static Object propertyMacro_GetPropertyValue_8529059538743521717(final PropertyMacroContext _context) {
+  public static Object propertyMacro_GetPropertyValue_6845855955517108803(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762aef6ac7L, 0x765d4e762aef6adaL, "height"));
   }
   public static Object propertyMacro_GetPropertyValue_8529059538743185988(final PropertyMacroContext _context) {

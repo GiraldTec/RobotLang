@@ -54,7 +54,7 @@
         <property role="DBbGm" value="3" />
       </node>
       <node concept="1sDkWY" id="5W1nrxW3jYh" role="2ypZiR">
-        <property role="15t0pf" value="150" />
+        <property role="15t0pf" value="15" />
       </node>
       <node concept="DBbGE" id="4YpOxlRk4AK" role="2ypZiR">
         <property role="DBbGm" value="3" />
@@ -66,24 +66,24 @@
         <property role="DBbGm" value="-1" />
       </node>
       <node concept="1sDkWY" id="5W1nrxW3jZe" role="2ypZiR">
-        <property role="15t0pf" value="200" />
+        <property role="15t0pf" value="20" />
       </node>
       <node concept="DBbGE" id="4YpOxlRkXIY" role="2ypZiR">
         <property role="DBbGm" value="1" />
       </node>
       <node concept="1sDkWY" id="5W1nrxW3k0b" role="2ypZiR">
-        <property role="15t0pf" value="300" />
+        <property role="15t0pf" value="30" />
       </node>
     </node>
   </node>
   <node concept="1sGyiL" id="5W1nrxW3zQT">
     <property role="TrG5h" value="OnlyARobot" />
-    <property role="1sGyiG" value="500" />
-    <property role="1sGyiE" value="500" />
+    <property role="1sGyiG" value="1000" />
+    <property role="1sGyiE" value="1000" />
     <node concept="XNUzN" id="5W1nrxW3zRK" role="2Ea9iK">
-      <property role="XNU$E" value="100" />
-      <property role="XNU$1" value="100" />
-      <property role="XNU$l" value="0" />
+      <property role="XNU$E" value="250" />
+      <property role="XNU$1" value="250" />
+      <property role="XNU$l" value="1" />
     </node>
   </node>
 </model>

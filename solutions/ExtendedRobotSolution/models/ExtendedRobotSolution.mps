@@ -49,7 +49,7 @@
     </node>
     <node concept="SMivG" id="v1xVt2HRyn" role="SMiiC">
       <property role="TrG5h" value="y" />
-      <property role="SMijm" value="50" />
+      <property role="SMijm" value="5000" />
     </node>
     <node concept="XNUzN" id="v1xVt2HRxu" role="2Ea9iK">
       <property role="XNU$E" value="250" />

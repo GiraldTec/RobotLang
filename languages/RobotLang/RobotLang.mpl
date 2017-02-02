@@ -14,6 +14,10 @@
         </modelRoot>
       </models>
       <external-templates />
+      <dependencies>
+        <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+        <dependency reexport="false">08a75484-cb37-41a1-9101-452babc1c9a4(ExtendedRobot#2404968908937321730)</dependency>
+      </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
         <usedDevKit>a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)</usedDevKit>
@@ -39,6 +43,7 @@
       </languageVersions>
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
+        <module reference="08a75484-cb37-41a1-9101-452babc1c9a4(ExtendedRobot#2404968908937321730)" version="0" />
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
