@@ -33,6 +33,9 @@
       </concept>
     </language>
     <language id="44a68ba0-da44-468d-b668-4259fde7d8c0" name="ExtendedRobot">
+      <concept id="2012786190356315134" name="ExtendedRobot.structure.ConstantRef" flags="ng" index="B4i6u">
+        <reference id="2012786190356333916" name="constant" index="AVDWW" />
+      </concept>
       <concept id="2404968908937397821" name="ExtendedRobot.structure.ExtendedRoom" flags="ng" index="CsEL6">
         <child id="5735846590070978237" name="listOFconstants" index="SMiiC" />
       </concept>
@@ -105,7 +108,7 @@
     <property role="1sGyiG" value="500" />
     <property role="1sGyiE" value="500" />
     <node concept="SMivG" id="1JIQA0WYoXC" role="SMiiC">
-      <property role="TrG5h" value="A" />
+      <property role="TrG5h" value="A1" />
       <property role="SMijm" value="10" />
     </node>
     <node concept="SMivG" id="1JIQA0WYoXE" role="SMiiC">
@@ -117,7 +120,7 @@
       <property role="XNU$1" value="250" />
       <property role="XNU$l" value="0" />
       <node concept="15tTpn" id="1JIQA0WY_sZ" role="2ypZiR">
-        <ref role="15tTlG" node="1JIQA0WYoXC" resolve="A" />
+        <ref role="15tTlG" node="1JIQA0WYoXC" resolve="A1" />
       </node>
       <node concept="15tTpn" id="1JIQA0WY_t4" role="2ypZiR">
         <ref role="15tTlG" node="1JIQA0WYoXE" resolve="B" />
@@ -136,7 +139,7 @@
     <property role="1sGyiE" value="1000" />
     <node concept="SMivG" id="1JIQA0WYQmy" role="SMiiC">
       <property role="TrG5h" value="A" />
-      <property role="SMijm" value="400" />
+      <property role="SMijm" value="50" />
     </node>
     <node concept="XNUzN" id="1JIQA0WYPth" role="2Ea9iK">
       <property role="XNU$E" value="250" />
@@ -171,10 +174,33 @@
         </node>
       </node>
       <node concept="DBbGE" id="1JIQA0WYQlR" role="2ypZiR">
-        <property role="DBbGm" value="2" />
+        <property role="DBbGm" value="-1" />
       </node>
-      <node concept="15tTpn" id="1JIQA0WYQmj" role="2ypZiR">
-        <ref role="15tTlG" node="1JIQA0WYoXC" resolve="A" />
+      <node concept="15tTpn" id="1JIQA0WZZdC" role="2ypZiR">
+        <ref role="15tTlG" node="1JIQA0WYQmy" resolve="A" />
+      </node>
+      <node concept="DBbGE" id="1JIQA0WZZIE" role="2ypZiR">
+        <property role="DBbGm" value="1" />
+      </node>
+      <node concept="1Gp$gR" id="1JIQA0WZZJa" role="2ypZiR">
+        <node concept="3cpWs3" id="1JIQA0X0lZ8" role="1Gp$gQ">
+          <node concept="3cmrfG" id="1JIQA0X0lZl" role="3uHU7w">
+            <property role="3cmrfH" value="10" />
+          </node>
+          <node concept="B4i6u" id="1JIQA0X0lYX" role="3uHU7B">
+            <ref role="AVDWW" node="1JIQA0WYQmy" resolve="A" />
+          </node>
+        </node>
+      </node>
+      <node concept="1Gp$gR" id="1JIQA0X14ap" role="2ypZiR">
+        <node concept="3cpWs3" id="1JIQA0X19ra" role="1Gp$gQ">
+          <node concept="B4i6u" id="1JIQA0X1aqC" role="3uHU7w">
+            <ref role="AVDWW" node="1JIQA0WYQmy" resolve="A" />
+          </node>
+          <node concept="B4i6u" id="1JIQA0X19qX" role="3uHU7B">
+            <ref role="AVDWW" node="1JIQA0WYQmy" resolve="A" />
+          </node>
+        </node>
       </node>
     </node>
   </node>

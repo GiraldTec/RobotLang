@@ -7,8 +7,8 @@
   </languages>
   <imports>
     <import index="jdo1" ref="r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)" implicit="true" />
-    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -62,7 +62,7 @@
     <property role="EcuMT" value="5735846590070978041" />
     <property role="TrG5h" value="Constant" />
     <property role="34LRSv" value="constant" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4YpOxlRkfr3" role="1TKVEl">
       <property role="IQ2nx" value="5735846590070978243" />
       <property role="TrG5h" value="value" />
@@ -96,6 +96,18 @@
       <property role="20kJfa" value="distance" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1JIQA0WZZJY">
+    <property role="EcuMT" value="2012786190356315134" />
+    <property role="TrG5h" value="ConstantRef" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="1JIQA0X04ls" role="1TKVEi">
+      <property role="IQ2ns" value="2012786190356333916" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="constant" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4YpOxlRkfnT" resolve="Constant" />
     </node>
   </node>
 </model>
