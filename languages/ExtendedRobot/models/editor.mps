@@ -124,10 +124,10 @@
     </node>
   </node>
   <node concept="24kQdi" id="v1xVt2Hx8P">
-    <ref role="1XX52x" to="cewu:v1xVt2Hx7w" resolve="ExtendedMove" />
+    <ref role="1XX52x" to="cewu:v1xVt2Hx7w" resolve="ConstantMove" />
     <node concept="3EZMnI" id="v1xVt2Hx9H" role="2wV5jI">
       <node concept="3F0ifn" id="v1xVt2Hx9R" role="3EZMnx">
-        <property role="3F0ifm" value="xMove" />
+        <property role="3F0ifm" value="conMove:" />
       </node>
       <node concept="1iCGBv" id="v1xVt2Hxb_" role="3EZMnx">
         <ref role="1NtTu8" to="cewu:v1xVt2Hxbr" resolve="distance" />
@@ -139,6 +139,18 @@
         </node>
       </node>
       <node concept="2iRfu4" id="v1xVt2Hx9K" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7FYgpWmA0mG">
+    <ref role="1XX52x" to="cewu:7FYgpWmA0mC" resolve="ExpressionMove" />
+    <node concept="3EZMnI" id="7FYgpWmA0mI" role="2wV5jI">
+      <node concept="3F0ifn" id="7FYgpWmA0mS" role="3EZMnx">
+        <property role="3F0ifm" value="xMove:" />
+      </node>
+      <node concept="2iRfu4" id="7FYgpWmA0mL" role="2iSdaV" />
+      <node concept="3F1sOY" id="7FYgpWmA0ne" role="3EZMnx">
+        <ref role="1NtTu8" to="cewu:7FYgpWmA0mD" resolve="distance" />
+      </node>
     </node>
   </node>
 </model>

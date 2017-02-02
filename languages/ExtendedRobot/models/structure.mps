@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="jdo1" ref="r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -61,7 +62,7 @@
     <property role="EcuMT" value="5735846590070978041" />
     <property role="TrG5h" value="Constant" />
     <property role="34LRSv" value="constant" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyi" id="4YpOxlRkfr3" role="1TKVEl">
       <property role="IQ2nx" value="5735846590070978243" />
       <property role="TrG5h" value="value" />
@@ -73,7 +74,8 @@
   </node>
   <node concept="1TIwiD" id="v1xVt2Hx7w">
     <property role="EcuMT" value="558877049938645472" />
-    <property role="TrG5h" value="ExtendedMove" />
+    <property role="TrG5h" value="ConstantMove" />
+    <property role="34LRSv" value="constantMove" />
     <ref role="1TJDcQ" to="jdo1:7ptjBoEY061" resolve="Action" />
     <node concept="1TJgyj" id="v1xVt2Hxbr" role="1TKVEi">
       <property role="IQ2ns" value="558877049938645723" />
@@ -81,6 +83,19 @@
       <property role="20kJfa" value="distance" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4YpOxlRkfnT" resolve="Constant" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7FYgpWmA0mC">
+    <property role="EcuMT" value="8862593268246381992" />
+    <property role="TrG5h" value="ExpressionMove" />
+    <property role="34LRSv" value="expressionmove" />
+    <ref role="1TJDcQ" to="jdo1:7ptjBoEY061" resolve="Action" />
+    <node concept="1TJgyj" id="7FYgpWmA0mD" role="1TKVEi">
+      <property role="IQ2ns" value="8862593268246381993" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="distance" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
     </node>
   </node>
 </model>
