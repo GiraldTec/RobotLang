@@ -38,17 +38,21 @@ public class OnlyARoom extends JFrame {
     System.out.println(dir);
 
     switch (dir) {
-      case 3:
-        System.out.println("case 3");
-        r = x - dist;
-        break;
+      case 2:
       case 1:
-        System.out.println("case 1");
-
+      case 3:
+        System.out.println("case right");
         r = x + dist;
         break;
+      case 5:
+      case 6:
+      case 7:
+        System.out.println("case left");
+
+        r = x - dist;
+        break;
       default:
-        System.out.println("case 0 or 2");
+        System.out.println("case up or down");
 
     }
     if (r > width) {
@@ -66,18 +70,22 @@ public class OnlyARoom extends JFrame {
     System.out.println(dir);
 
     switch (dir) {
+      case 1:
+      case 7:
       case 0:
-        System.out.println("case 0");
+        System.out.println("case up");
 
         r = y - dist;
         break;
-      case 2:
-        System.out.println("case 2");
+      case 3:
+      case 4:
+      case 5:
+        System.out.println("case down");
 
         r = y + dist;
         break;
       default:
-        System.out.println("case 1 or 3");
+        System.out.println("case left or right");
 
     }
     if (r > height) {

@@ -131,5 +131,32 @@
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1JIQA0X6yhl">
+    <property role="EcuMT" value="2012786190358029397" />
+    <property role="TrG5h" value="Look" />
+    <property role="34LRSv" value="Look" />
+    <ref role="1TJDcQ" node="7ptjBoEY061" resolve="Action" />
+    <node concept="1TJgyi" id="1JIQA0X6ynz" role="1TKVEl">
+      <property role="IQ2nx" value="2012786190358029795" />
+      <property role="TrG5h" value="direction" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1JIQA0X6BIS">
+    <property role="EcuMT" value="2012786190358051768" />
+    <property role="TrG5h" value="Jump" />
+    <property role="34LRSv" value="jump" />
+    <ref role="1TJDcQ" node="7ptjBoEY061" resolve="Action" />
+    <node concept="1TJgyi" id="1JIQA0X6BK$" role="1TKVEl">
+      <property role="IQ2nx" value="2012786190358051876" />
+      <property role="TrG5h" value="x" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="1JIQA0X6BKC" role="1TKVEl">
+      <property role="IQ2nx" value="2012786190358051880" />
+      <property role="TrG5h" value="y" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
 </model>
 

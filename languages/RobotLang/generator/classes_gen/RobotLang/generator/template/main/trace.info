@@ -3,13 +3,27 @@
   <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <root>
     <file name="QueriesGenerated.java">
-      <unit at="15,0,57,0" name="RobotLang.generator.template.main.QueriesGenerated" />
+      <unit at="15,0,66,0" name="RobotLang.generator.template.main.QueriesGenerated" />
+    </file>
+  </root>
+  <root nodeRef="r:4651b5c5-961a-48ef-97f7-4817ac8c9069(RobotLang.generator.template.main@generator)/2012786190358031587">
+    <file name="QueriesGenerated.java">
+      <node id="2012786190358040096" at="47,112,48,191" concept="0" />
+      <scope id="2012786190358040095" at="47,112,48,191" />
+    </file>
+  </root>
+  <root nodeRef="r:4651b5c5-961a-48ef-97f7-4817ac8c9069(RobotLang.generator.template.main@generator)/2012786190358052061">
+    <file name="QueriesGenerated.java">
+      <node id="2012786190358128347" at="50,112,51,183" concept="0" />
+      <node id="2012786190358130181" at="53,112,54,183" concept="0" />
+      <scope id="2012786190358128341" at="50,112,51,183" />
+      <scope id="2012786190358130175" at="53,112,54,183" />
     </file>
   </root>
   <root nodeRef="r:4651b5c5-961a-48ef-97f7-4817ac8c9069(RobotLang.generator.template.main@generator)/2404968908936892314">
     <file name="QueriesGenerated.java">
-      <node id="5735846590071147485" at="44,112,45,187" concept="0" />
-      <scope id="5735846590071125999" at="44,112,45,187" />
+      <node id="2012786190357747956" at="44,112,45,187" concept="0" />
+      <scope id="2012786190357747955" at="44,112,45,187" />
     </file>
   </root>
   <root nodeRef="r:4651b5c5-961a-48ef-97f7-4817ac8c9069(RobotLang.generator.template.main@generator)/685456644223836732">
@@ -26,14 +40,14 @@
       <node id="6845855955517049249" at="20,112,21,187" concept="0" />
       <node id="6845855955517115917" at="23,112,24,188" concept="0" />
       <node id="8529059538743187766" at="26,112,27,175" concept="0" />
-      <node id="6845855955516501992" at="47,94,48,196" concept="0" />
-      <node id="1123755123214027529" at="50,108,51,188" concept="0" />
+      <node id="6845855955516501992" at="56,94,57,196" concept="0" />
+      <node id="1123755123214027529" at="59,108,60,188" concept="0" />
       <scope id="8529059538743235536" at="17,112,18,175" />
       <scope id="6845855955517040629" at="20,112,21,187" />
       <scope id="6845855955517108804" at="23,112,24,188" />
       <scope id="8529059538743185989" at="26,112,27,175" />
-      <scope id="6845855955516495542" at="47,94,48,196" />
-      <scope id="1123755123214027523" at="50,108,51,188" />
+      <scope id="6845855955516495542" at="56,94,57,196" />
+      <scope id="1123755123214027523" at="59,108,60,188" />
     </file>
   </root>
   <root nodeRef="r:4651b5c5-961a-48ef-97f7-4817ac8c9069(RobotLang.generator.template.main@generator)/8555814703051613956">
@@ -41,11 +55,11 @@
       <node id="2404968908935853877" at="29,112,30,183" concept="0" />
       <node id="2404968908935855150" at="32,112,33,183" concept="0" />
       <node id="2404968908936022445" at="35,112,36,191" concept="0" />
-      <node id="5735846590071344303" at="53,120,54,192" concept="0" />
+      <node id="5735846590071344303" at="62,120,63,192" concept="0" />
       <scope id="2404968908935853871" at="29,112,30,183" />
       <scope id="2404968908935855144" at="32,112,33,183" />
       <scope id="2404968908936022439" at="35,112,36,191" />
-      <scope id="5735846590071344297" at="53,120,54,192" />
+      <scope id="5735846590071344297" at="62,120,63,192" />
     </file>
   </root>
 </debug-info>

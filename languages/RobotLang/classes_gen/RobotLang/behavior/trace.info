@@ -7,6 +7,12 @@
     <file name="BehaviorAspectDescriptor.java">
       <unit at="13,0,41,0" name="RobotLang.behavior.BehaviorAspectDescriptor" />
     </file>
+    <file name="Jump_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="RobotLang.behavior.Jump_BehaviorDescriptor" />
+    </file>
+    <file name="Look_BehaviorDescriptor.java">
+      <unit at="11,0,17,0" name="RobotLang.behavior.Look_BehaviorDescriptor" />
+    </file>
     <file name="Move_BehaviorDescriptor.java">
       <unit at="11,0,17,0" name="RobotLang.behavior.Move_BehaviorDescriptor" />
     </file>

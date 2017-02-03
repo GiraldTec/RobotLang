@@ -41,8 +41,17 @@ public class QueriesGenerated {
   public static Object propertyMacro_GetPropertyValue_5735846590070992707(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80148L, 0x7c187b742b581f8L, "distance"));
   }
-  public static Object propertyMacro_GetPropertyValue_5735846590071125998(final PropertyMacroContext _context) {
+  public static Object propertyMacro_GetPropertyValue_2012786190357747954(final PropertyMacroContext _context) {
     return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x21602a7b08fc9151L, 0x21602a7b08fc916dL, "angle"));
+  }
+  public static Object propertyMacro_GetPropertyValue_2012786190358040094(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x1beeda603d1a2455L, 0x1beeda603d1a25e3L, "direction"));
+  }
+  public static Object propertyMacro_GetPropertyValue_2012786190358128340(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x1beeda603d1a7bb8L, 0x1beeda603d1a7c24L, "x"));
+  }
+  public static Object propertyMacro_GetPropertyValue_2012786190358130174(final PropertyMacroContext _context) {
+    return SPropertyOperations.getInteger(_context.getNode(), MetaAdapterFactory.getProperty(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x1beeda603d1a7bb8L, 0x1beeda603d1a7c28L, "y"));
   }
   public static boolean ifMacro_Condition_6845855955516495540(final IfMacroContext _context) {
     return SLinkOperations.getTarget(_context.getNode(), MetaAdapterFactory.getContainmentLink(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762aef6ac7L, 0xf986154a5b0f5e4L, "robot")) != null;

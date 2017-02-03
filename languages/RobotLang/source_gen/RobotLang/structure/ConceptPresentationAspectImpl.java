@@ -10,6 +10,8 @@ import org.jetbrains.mps.openapi.language.SAbstractConcept;
 
 public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase {
   private final ConceptPresentation props_Action = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Jump = new ConceptPresentationBuilder().create();
+  private final ConceptPresentation props_Look = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Move = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Robot = new ConceptPresentationBuilder().create();
   private final ConceptPresentation props_Room = new ConceptPresentationBuilder().create();
@@ -23,12 +25,16 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
       case 0:
         return props_Action;
       case 1:
-        return props_Move;
+        return props_Jump;
       case 2:
-        return props_Robot;
+        return props_Look;
       case 3:
-        return props_Room;
+        return props_Move;
       case 4:
+        return props_Robot;
+      case 5:
+        return props_Room;
+      case 6:
         return props_Turn;
     }
     throw new IllegalStateException("Unknown concept " + c);

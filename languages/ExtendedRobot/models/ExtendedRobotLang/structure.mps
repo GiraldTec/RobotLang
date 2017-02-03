@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:df8f0523-9c15-4816-a9e1-e8a22c50f1e9(ExtendedRobot.structure)">
+<model ref="r:df8f0523-9c15-4816-a9e1-e8a22c50f1e9(ExtendedRobotLang.structure)">
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="3" />
@@ -100,7 +100,7 @@
   </node>
   <node concept="1TIwiD" id="1JIQA0WZZJY">
     <property role="EcuMT" value="2012786190356315134" />
-    <property role="TrG5h" value="ConstantRef" />
+    <property role="TrG5h" value="ConstantExpression" />
     <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="1JIQA0X04ls" role="1TKVEi">
       <property role="IQ2ns" value="2012786190356333916" />
@@ -108,6 +108,37 @@
       <property role="20kJfa" value="constant" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="4YpOxlRkfnT" resolve="Constant" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1JIQA0X7g89">
+    <property role="EcuMT" value="2012786190358217225" />
+    <property role="TrG5h" value="Loop" />
+    <property role="34LRSv" value="loop" />
+    <ref role="1TJDcQ" to="jdo1:7ptjBoEY061" resolve="Action" />
+    <node concept="1TJgyj" id="1JIQA0X7LvX" role="1TKVEi">
+      <property role="IQ2ns" value="2012786190358353917" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="times" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="1JIQA0X7gbx" role="1TKVEi">
+      <property role="IQ2ns" value="2012786190358217441" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="actions" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" to="jdo1:7ptjBoEY061" resolve="Action" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1JIQA0X8kLq">
+    <property role="EcuMT" value="2012786190358498394" />
+    <property role="TrG5h" value="Comment" />
+    <property role="34LRSv" value="comment" />
+    <ref role="1TJDcQ" to="jdo1:7ptjBoEY061" resolve="Action" />
+    <node concept="1TJgyi" id="1JIQA0X8kLZ" role="1TKVEl">
+      <property role="IQ2nx" value="2012786190358498431" />
+      <property role="TrG5h" value="description" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

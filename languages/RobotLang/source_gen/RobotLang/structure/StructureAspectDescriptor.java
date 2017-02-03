@@ -18,8 +18,10 @@ import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
-  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(5);
+  private final Map<SConceptId, Integer> myIndexMap = new HashMap<SConceptId, Integer>(7);
   /*package*/ final ConceptDescriptor myConceptAction = createDescriptorForAction();
+  /*package*/ final ConceptDescriptor myConceptJump = createDescriptorForJump();
+  /*package*/ final ConceptDescriptor myConceptLook = createDescriptorForLook();
   /*package*/ final ConceptDescriptor myConceptMove = createDescriptorForMove();
   /*package*/ final ConceptDescriptor myConceptRobot = createDescriptorForRobot();
   /*package*/ final ConceptDescriptor myConceptRoom = createDescriptorForRoom();
@@ -27,15 +29,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   public StructureAspectDescriptor() {
     myIndexMap.put(myConceptAction.getId(), 0);
-    myIndexMap.put(myConceptMove.getId(), 1);
-    myIndexMap.put(myConceptRobot.getId(), 2);
-    myIndexMap.put(myConceptRoom.getId(), 3);
-    myIndexMap.put(myConceptTurn.getId(), 4);
+    myIndexMap.put(myConceptJump.getId(), 1);
+    myIndexMap.put(myConceptLook.getId(), 2);
+    myIndexMap.put(myConceptMove.getId(), 3);
+    myIndexMap.put(myConceptRobot.getId(), 4);
+    myIndexMap.put(myConceptRoom.getId(), 5);
+    myIndexMap.put(myConceptTurn.getId(), 6);
   }
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptMove, myConceptRobot, myConceptRoom, myConceptTurn);
+    return Arrays.asList(myConceptAction, myConceptJump, myConceptLook, myConceptMove, myConceptRobot, myConceptRoom, myConceptTurn);
   }
 
   @Override
@@ -49,12 +53,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
       case 0:
         return myConceptAction;
       case 1:
-        return myConceptMove;
+        return myConceptJump;
       case 2:
-        return myConceptRobot;
+        return myConceptLook;
       case 3:
-        return myConceptRoom;
+        return myConceptMove;
       case 4:
+        return myConceptRobot;
+      case 5:
+        return myConceptRoom;
+      case 6:
         return myConceptTurn;
       default:
         throw new IllegalStateException();
@@ -73,6 +81,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   private static ConceptDescriptor createDescriptorForAction() {
     return new ConceptDescriptorBuilder("RobotLang.structure.Action", MetaIdFactory.conceptId(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80181L)).super_("jetbrains.mps.lang.core.structure.BaseConcept").version(1).super_(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).parents("jetbrains.mps.lang.core.structure.BaseConcept").parentIds(MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x10802efe25aL)).abstract_().alias("action", "").sourceNode(new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "8529059538743591297")).create();
+  }
+  private static ConceptDescriptor createDescriptorForJump() {
+    return new ConceptDescriptorBuilder("RobotLang.structure.Jump", MetaIdFactory.conceptId(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x1beeda603d1a7bb8L)).super_("RobotLang.structure.Action").version(1).super_(MetaIdFactory.conceptId(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80181L)).parents("RobotLang.structure.Action").parentIds(MetaIdFactory.conceptId(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80181L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x1beeda603d1a7c24L, "x", new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "2012786190358051876")), new ConceptDescriptorBuilder.Prop(0x1beeda603d1a7c28L, "y", new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "2012786190358051880"))).properties("x", "y").alias("jump", "").sourceNode(new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "2012786190358051768")).create();
+  }
+  private static ConceptDescriptor createDescriptorForLook() {
+    return new ConceptDescriptorBuilder("RobotLang.structure.Look", MetaIdFactory.conceptId(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x1beeda603d1a2455L)).super_("RobotLang.structure.Action").version(1).super_(MetaIdFactory.conceptId(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80181L)).parents("RobotLang.structure.Action").parentIds(MetaIdFactory.conceptId(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80181L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x1beeda603d1a25e3L, "direction", new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "2012786190358029795"))).properties("direction").alias("Look", "").sourceNode(new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "2012786190358029397")).create();
   }
   private static ConceptDescriptor createDescriptorForMove() {
     return new ConceptDescriptorBuilder("RobotLang.structure.Move", MetaIdFactory.conceptId(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80148L)).super_("RobotLang.structure.Action").version(1).super_(MetaIdFactory.conceptId(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80181L)).parents("RobotLang.structure.Action").parentIds(MetaIdFactory.conceptId(0xe18f85ddf5fe45a9L, 0x8640356892e9137eL, 0x765d4e762af80181L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(0x7c187b742b581f8L, "distance", new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "558877049938608632"))).properties("distance").alias("move", "").sourceNode(new SNodePointer("r:166009be-9e66-45ad-a020-4c62d849af80(RobotLang.structure)", "8529059538743591240")).create();

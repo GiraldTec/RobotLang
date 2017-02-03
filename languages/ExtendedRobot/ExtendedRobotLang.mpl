@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="ExtendedRobot" uuid="44a68ba0-da44-468d-b668-4259fde7d8c0" languageVersion="0" moduleVersion="0">
+<language namespace="ExtendedRobotLang" uuid="44a68ba0-da44-468d-b668-4259fde7d8c0" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -7,13 +7,16 @@
   </models>
   <accessoryModels />
   <generators>
-    <generator generatorUID="ExtendedRobot#2404968908937321730" uuid="08a75484-cb37-41a1-9101-452babc1c9a4">
+    <generator generatorUID="ExtendedRobotLang#2404968908937321730" uuid="08a75484-cb37-41a1-9101-452babc1c9a4">
       <models>
         <modelRoot contentPath="${module}" type="default">
           <sourceRoot path="${module}/generator/template" />
         </modelRoot>
       </models>
       <external-templates />
+      <dependencies>
+        <dependency reexport="false">e18f85dd-f5fe-45a9-8640-356892e9137e(RobotLang)</dependency>
+      </dependencies>
       <usedDevKits>
         <usedDevKit>fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)</usedDevKit>
         <usedDevKit>a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)</usedDevKit>
@@ -40,8 +43,8 @@
       </languageVersions>
       <dependencyVersions>
         <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
-        <module reference="44a68ba0-da44-468d-b668-4259fde7d8c0(ExtendedRobot)" version="0" />
-        <module reference="08a75484-cb37-41a1-9101-452babc1c9a4(ExtendedRobot#2404968908937321730)" version="0" />
+        <module reference="44a68ba0-da44-468d-b668-4259fde7d8c0(ExtendedRobotLang)" version="0" />
+        <module reference="08a75484-cb37-41a1-9101-452babc1c9a4(ExtendedRobotLang#2404968908937321730)" version="0" />
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
@@ -102,7 +105,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
-    <module reference="44a68ba0-da44-468d-b668-4259fde7d8c0(ExtendedRobot)" version="0" />
+    <module reference="44a68ba0-da44-468d-b668-4259fde7d8c0(ExtendedRobotLang)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
